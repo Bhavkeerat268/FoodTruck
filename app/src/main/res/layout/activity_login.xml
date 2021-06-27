@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".activity.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imgAppLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/app_logo"/>
+
+
+    <EditText
+    android:id="@+id/etLoginMobile"
+    android:layout_below="@id/imgAppLogo"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:background="@drawable/login_edit_text"
+        android:backgroundTint="#ffffff"
+    android:textSize="13sp"
+        android:inputType="number"
+        android:drawableStart="@drawable/ic_phone"
+    android:hint="Enter Mobile Number(Max 10 digits)"
+        android:maxLength="10"
+    android:padding="12dp"
+    android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+    <com.google.android.material.textfield.TextInputLayout
+        app:passwordToggleEnabled="true"
+        app:hintEnabled="false"
+        android:id="@+id/passwordLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etLoginMobile">
+
+    <EditText
+        android:id="@+id/etLoginPassword"
+        android:drawableStart="@drawable/ic_password"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/login_edit_text"
+        android:textSize="13sp"
+        android:hint="@string/enter_password"
+        android:backgroundTint="#ffffff"
+
+        android:padding="8dp"
+        android:inputType="textPassword"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="5dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordLayout"
+        android:layout_centerHorizontal="true"
+        android:text="@string/login"
+        android:backgroundTint="#000000"
+        android:background="@drawable/login_edit_text"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="30dp"/>
+    <TextView
+
+        
+        android:id="@+id/txtForgetPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forget Password?"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:layout_below="@id/btnLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:id="@+id/txtRegisterHere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/don_t_have_an_account_register_here"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>

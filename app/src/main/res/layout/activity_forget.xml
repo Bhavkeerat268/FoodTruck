@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/forgetFrame">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ForgetActivity"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/imgForget"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/app_logo"/>
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:layout_below="@id/imgForget"
+        android:id="@+id/txthead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your registered mobile number and email below:"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
+    <EditText
+        android:id="@+id/etForgetNumber"
+        android:layout_below="@id/txthead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_edit_text"
+        android:hint="Mobile Number"
+        android:backgroundTint="#ffffff"
+        android:textSize="18sp"
+        android:padding="7dp"
+        android:layout_margin="10dp"/>
+    <EditText
+        android:id="@+id/etForgetEmail"
+        android:layout_below="@id/etForgetNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_edit_text"
+        android:hint="Email Address"
+        android:backgroundTint="#ffffff"
+        android:textSize="18sp"
+        android:padding="7dp"
+        android:layout_margin="10dp"/>
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_edit_text"
+        android:backgroundTint="#000000"
+        android:textColor="@color/colorPrimary"
+        android:text="Next"
+        android:textSize="25sp"
+        android:textAllCaps="false"
+        android:layout_below="@id/etForgetEmail"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
+</FrameLayout>

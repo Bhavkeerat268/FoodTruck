@@ -1,0 +1,98 @@
+
+<androidx.cardview.widget.CardView android:layout_height="140dp"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    app:cardCornerRadius="15dp"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="1dp"
+    app:cardMaxElevation="1dp">
+<LinearLayout
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="horizontal"
+    android:id="@+id/llcontent"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_weight="3.3"
+        android:layout_width="0dp"
+        android:layout_height="95dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="7dp"
+
+        app:cardCornerRadius="7dp">
+
+        <ImageView
+            android:id="@+id/imgResImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/app_logo" />
+    </androidx.cardview.widget.CardView>
+
+
+    <RelativeLayout
+        android:layout_weight="5.4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <TextView
+
+            android:textColor="#000000"
+            android:id="@+id/txtResName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Restaurant name"
+            android:padding="7dp"/>
+        <TextView
+            android:id="@+id/txtCostForOne"
+            android:layout_below="@+id/txtResName"
+            android:layout_width="match_parent"
+            android:drawableStart="@drawable/ic_rupee_icon"
+            android:drawablePadding="5dp"
+            android:layout_height="wrap_content"
+            android:text="Rs 250/person"
+            android:textSize="15sp"
+            android:padding="7dp"
+            android:layout_marginTop="6dp"
+            />
+
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_weight="1.3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:id="@+id/imgFavBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_favourites_unclicked"
+            />
+        <TextView
+            android:id="@+id/txtResRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="4.1"
+            android:textColor="#ffc400"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>
